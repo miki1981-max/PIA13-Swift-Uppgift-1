@@ -10,13 +10,65 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack {
+                HStack{}
+                
+                    .frame(width:150,height:150)
+                    .background(Color.red)
+                
+                
+                HStack {
+                }
+                .frame(width:150,height:150)
+                .background(Color.green)
+                
+                HStack{
+                }
+                .frame(width:150,height:150)
+                .background(Color.yellow)
+                
+            }
+            
+            VStack {
+                VStack{
+                    
+                }
+                
+                .frame(maxWidth:.infinity,maxHeight:100)
+                .background(Color.gray)
+                
+                VStack {}
+                    .frame(width:120,height:120)
+                    .background(Color.white)
+                
+                Spacer ()
+                
+            }
+            
+            HStack {
+                
+                Spacer()
+                VStack {
+                    
+                    
+                }
+               
+                    .frame(width:50,height:50)
+                    .background(Color.black)
+                    .padding(50)
+                
+            }
+            
+            .frame(maxWidth:.infinity,maxHeight:100)
+            .background(Color.red)
+            
+            
         }
-        .padding()
+        .frame(maxWidth:.infinity,maxHeight:.infinity)
+        .background(Color.blue)
     }
+    
+   
 }
 
 #Preview {
